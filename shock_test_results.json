@@ -1,0 +1,44 @@
+{
+  "Database Connection": {
+    "success": true,
+    "duration": 1.5217218399047852,
+    "error": null,
+    "details": "Found 29 tables",
+    "timestamp": "2025-07-15T09:25:57.280499"
+  },
+  "Groq API": {
+    "success": true,
+    "duration": 5.0320751667022705,
+    "error": null,
+    "details": "Response length: 4",
+    "timestamp": "2025-07-15T09:26:02.325328"
+  },
+  "Agent Creation": {
+    "success": true,
+    "duration": 0.055409908294677734,
+    "error": null,
+    "details": "Created 3 agents",
+    "timestamp": "2025-07-15T09:26:02.390634"
+  },
+  "SQL Generation": {
+    "success": true,
+    "duration": 0.7727756500244141,
+    "error": null,
+    "details": "Generated SQL: 72 chars",
+    "timestamp": "2025-07-15T09:26:03.169430"
+  },
+  "Query Execution": {
+    "success": false,
+    "duration": 0.0058498382568359375,
+    "error": "SQL Error: SQL Error: (psycopg2.errors.UndefinedColumn) column \"chv_name\" does not exist\nLINE 1: SELECT chv_name, chv_uuid \n               ^\nHINT:  Perhaps you meant to reference the column \"chw_master.chw_name\" or the column \"chw_master.cha_name\".\n\n[SQL: SELECT chv_name, chv_uuid \nFROM chw_master \nWHERE county_name = 'Kisumu']\n(Background on this error at: https://sqlalche.me/e/20/f405)",
+    "details": null,
+    "timestamp": "2025-07-15T09:26:03.183384"
+  },
+  "Full Workflow": {
+    "success": true,
+    "duration": 2.1098101139068604,
+    "error": null,
+    "details": "Result keys: ['sql_query', 'df', 'summary', 'chart', 'chart_suggestion', 'analysis_metadata', 'execution_metadata']",
+    "timestamp": "2025-07-15T09:26:05.302199"
+  }
+}

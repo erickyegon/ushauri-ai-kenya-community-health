@@ -1,0 +1,177 @@
+{
+  "metadata": {
+    "description": "Master geographic and administrative data for Kenya Health AI System focus counties",
+    "counties": ["Kisumu", "Busia", "Vihiga"],
+    "data_source": "Kenya National Bureau of Statistics & OpenStreetMap",
+    "last_updated": "2025-07-14",
+    "coordinate_system": "WGS84"
+  },
+  "counties": {
+    "Kisumu": {
+      "name": "Kisumu",
+      "capital": "Kisumu",
+      "code": 42,
+      "region": "Nyanza",
+      "center": {
+        "longitude": 34.7778573178751,
+        "latitude": -0.197126
+      },
+      "boundaries": {
+        "min_longitude": 34.4388,
+        "max_longitude": 35.3433,
+        "min_latitude": -0.4168,
+        "max_latitude": 0.0226,
+        "bbox": [34.4388, -0.4168, 35.3433, 0.0226]
+      },
+      "sub_counties": [
+        "Kisumu central",
+        "Kisumu east",
+        "Kisumu west",
+        "Mohoroni",
+        "Nyakach",
+        "Nyando",
+        "Seme"
+      ],
+      "characteristics": [
+        "Urban-rural mix",
+        "High population density",
+        "Lake Victoria access",
+        "Major commercial center"
+      ],
+      "health_zones": {
+        "urban": {
+          "description": "Kisumu City and immediate surroundings",
+          "accessibility": "high",
+          "population_density": "high"
+        },
+        "peri_urban": {
+          "description": "Areas around Kisumu City",
+          "accessibility": "medium",
+          "population_density": "medium"
+        },
+        "rural": {
+          "description": "Rural areas and fishing communities",
+          "accessibility": "low",
+          "population_density": "low"
+        }
+      },
+      "color_code": "#1f77b4"
+    },
+    "Busia": {
+      "name": "Busia",
+      "capital": "Busia",
+      "code": 40,
+      "region": "Western",
+      "center": {
+        "longitude": 34.26479520608315,
+        "latitude": 0.3712048
+      },
+      "boundaries": {
+        "min_longitude": 33.9519,
+        "max_longitude": 34.7891,
+        "min_latitude": -0.0328,
+        "max_latitude": 0.8042,
+        "bbox": [33.9519, -0.0328, 34.7891, 0.8042]
+      },
+      "sub_counties": [
+        "Budalangi",
+        "Butula",
+        "Funyula",
+        "Nambele",
+        "Teso North",
+        "Teso South"
+      ],
+      "characteristics": [
+        "Border county",
+        "Cross-border health seeking",
+        "Agricultural economy",
+        "Uganda border access"
+      ],
+      "health_zones": {
+        "border": {
+          "description": "Areas near Uganda border",
+          "accessibility": "medium",
+          "population_density": "medium",
+          "special_considerations": ["cross_border_health_seeking"]
+        },
+        "agricultural": {
+          "description": "Rural agricultural areas",
+          "accessibility": "low",
+          "population_density": "low"
+        }
+      },
+      "color_code": "#ff7f0e"
+    },
+    "Vihiga": {
+      "name": "Vihiga",
+      "capital": "Vihiga",
+      "code": 38,
+      "region": "Western",
+      "center": {
+        "longitude": 34.708033906814826,
+        "latitude": 0.0831199
+      },
+      "boundaries": {
+        "min_longitude": 34.5341,
+        "max_longitude": 35.0123,
+        "min_latitude": -0.0166,
+        "max_latitude": 0.2831,
+        "bbox": [34.5341, -0.0166, 35.0123, 0.2831]
+      },
+      "sub_counties": [
+        "Emuhaya",
+        "Hamisi",
+        "Luanda",
+        "Sabatia",
+        "Vihiga"
+      ],
+      "characteristics": [
+        "High population density",
+        "Limited facilities",
+        "Strong community engagement",
+        "Highland terrain"
+      ],
+      "health_zones": {
+        "highland": {
+          "description": "Highland areas with dense population",
+          "accessibility": "medium",
+          "population_density": "very_high"
+        },
+        "valley": {
+          "description": "Valley areas with scattered settlements",
+          "accessibility": "low",
+          "population_density": "medium"
+        }
+      },
+      "color_code": "#2ca02c"
+    }
+  },
+  "inter_county_distances": {
+    "Kisumu_to_Busia": 85,
+    "Kisumu_to_Vihiga": 45,
+    "Busia_to_Vihiga": 65
+  },
+  "regional_groupings": {
+    "Lake_Victoria_Region": ["Kisumu", "Busia"],
+    "Western_Highlands": ["Vihiga"],
+    "Border_Counties": ["Busia"],
+    "Urban_Centers": ["Kisumu"]
+  },
+  "map_settings": {
+    "default_zoom": 9,
+    "center_point": [34.5, 0.1],
+    "tile_layer": "OpenStreetMap"
+  },
+  "file_references": {
+    "coordinates": {
+      "Kisumu": "kisumu_coordinates.json",
+      "Busia": "busia_coordinates.json",
+      "Vihiga": "vihiga_coordinates.json"
+    },
+    "geojson": {
+      "Kisumu": "kisumu.geojson",
+      "Busia": "busia.geojson",
+      "Vihiga": "vihiga.geojson"
+    }
+  }
+}

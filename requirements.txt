@@ -1,0 +1,232 @@
+# Kenya Agentic AI - Comprehensive Python Dependencies
+# Optimized for Kisumu, Busia, Vihiga health data analysis (Dec 2024 - Jun 2025)
+
+# Core Streamlit and Web Framework
+streamlit>=1.29.0
+pandas>=2.1.0
+numpy>=1.25.0
+
+# AutoGen and AI/ML Dependencies (Core)
+pyautogen>=0.6.0
+openai>=1.6.0
+transformers>=4.36.0
+torch>=2.1.0
+sentence-transformers>=2.2.2
+accelerate>=0.25.0
+
+# Database and Data Management
+psycopg2-binary>=2.9.7
+sqlalchemy>=2.0.23
+alembic>=1.12.0
+
+# Advanced Visualization and Charts
+plotly>=5.17.0
+matplotlib>=3.8.0
+seaborn>=0.13.0
+altair>=5.2.0
+kaleido>=0.2.1  # For plotly image export
+
+# Vector Search and Embeddings
+faiss-cpu>=1.7.4
+chromadb>=0.4.18
+pinecone-client>=2.2.4  # Alternative vector DB
+weaviate-client>=3.25.0  # Alternative vector DB
+
+# Report Generation and Document Processing
+xhtml2pdf>=0.2.13
+weasyprint>=60.2
+reportlab>=4.0.7
+openpyxl>=3.1.2
+python-docx>=1.1.0
+fpdf2>=2.7.6
+
+# Memory and Caching Systems
+redis>=5.0.1
+diskcache>=5.6.3
+joblib>=1.3.2
+
+# Enhanced NLP and Text Processing
+nltk>=3.8.1
+spacy>=3.7.2
+textblob>=0.17.1
+langdetect>=1.0.9
+
+# Data Processing and Analysis
+scipy>=1.11.4
+scikit-learn>=1.3.2
+statsmodels>=0.14.0
+python-dateutil>=2.8.2
+pytz>=2023.3
+
+# API and Web Utilities
+requests>=2.31.0
+httpx>=0.25.2
+aiohttp>=3.9.0
+urllib3>=2.1.0
+beautifulsoup4>=4.12.2
+
+# Configuration and Environment Management
+python-dotenv>=1.0.0
+pydantic>=2.5.0
+pydantic-settings>=2.1.0
+dynaconf>=3.2.4
+
+# Logging and Monitoring
+structlog>=23.2.0
+python-json-logger>=2.0.4
+sentry-sdk>=1.38.0
+prometheus-client>=0.19.0
+
+# Security and Authentication
+cryptography>=41.0.7
+passlib>=1.7.4
+python-jose>=3.3.0
+bcrypt>=4.1.2
+
+# Development and Testing
+pytest>=7.4.3
+pytest-asyncio>=0.21.1
+pytest-cov>=4.1.0
+black>=23.11.0
+flake8>=6.1.0
+mypy>=1.7.1
+bandit>=1.7.5
+safety>=2.3.5
+
+# Performance and Profiling
+line-profiler>=4.1.1
+memory-profiler>=0.61.0
+py-spy>=0.3.14
+
+# File Handling and Utilities
+pathlib2>=2.3.7
+chardet>=5.2.0
+python-magic>=0.4.27
+pillow>=10.1.0
+
+# Async and Concurrency
+aiofiles>=23.2.1
+
+# Kenya-Specific and Healthcare Analytics
+geopy>=2.4.0  # For geographic analysis
+folium>=0.15.0  # For mapping Kenya counties
+healthcareai>=2.4.0  # Healthcare-specific ML
+pytz>=2023.3  # For Kenya timezone handling
+
+# Advanced Charting and Dashboards
+dash>=2.14.2  # Alternative dashboard framework
+bokeh>=3.3.0  # Advanced visualizations
+holoviews>=1.18.0  # Complex data visualization
+
+# Cloud Storage and Services (Optional)
+google-cloud-storage>=2.10.0
+boto3>=1.34.0  # AWS S3
+azure-storage-blob>=12.19.0  # Azure storage
+
+# Database Connectors (Additional)
+pymongo>=4.6.0  # MongoDB connector
+elasticsearch>=8.11.0  # Elasticsearch connector
+
+# API Framework Extensions
+fastapi>=0.104.1  # Alternative to Streamlit
+uvicorn>=0.24.0  # ASGI server
+gunicorn>=21.2.0  # WSGI server
+
+# Time Series and Forecasting
+prophet>=1.1.4  # Time series forecasting
+statsforecast>=1.6.0  # Statistical forecasting
+pmdarima>=2.0.4  # ARIMA models
+
+# Geographic Information Systems (GIS)
+geopandas>=0.14.1  # Geographic data analysis
+shapely>=2.0.2  # Geometric operations
+fiona>=1.9.5  # File I/O for GIS
+
+# Enhanced Data Validation
+great-expectations>=0.18.0  # Data quality validation
+pandera>=0.17.2  # DataFrame validation
+cerberus>=1.3.5  # Schema validation
+
+# Workflow and Pipeline Management
+prefect>=2.14.0  # Workflow orchestration
+dagster>=1.5.0  # Alternative workflow tool
+airflow>=2.7.0  # Apache Airflow
+
+# Enhanced AI Model Management
+mlflow>=2.8.0  # ML experiment tracking
+wandb>=0.16.0  # Weights & Biases
+huggingface-hub>=0.19.0  # HF model management
+
+# Advanced AutoGen Extensions
+autogen[teachable]>=0.6.0  # Teachable agents
+autogen[retrievechat]>=0.6.0  # RAG capabilities
+autogen[mathchat]>=0.6.0  # Mathematical reasoning
+
+# LLM Integration Options
+groq>=0.4.0  # Fast inference API
+cohere>=4.37.0  # Cohere API
+anthropic>=0.7.0  # Claude API
+replicate>=0.20.0  # Replicate API
+
+# Enhanced Caching and Performance
+memcached>=1.4.0  # Distributed caching
+pyarrow>=14.0.0  # Columnar data processing
+polars>=0.20.0  # Fast DataFrame library
+
+# Specialized Healthcare Analytics
+lifelines>=0.27.0  # Survival analysis
+pymc>=5.9.0  # Bayesian modeling
+networkx>=3.2.1  # Network analysis
+
+# Advanced NLP for Health Data
+medspacy>=1.0.0  # Medical NLP
+scispacy>=0.5.3  # Scientific NLP
+clinical-bert>=1.0.0  # Clinical BERT models
+
+# Real-time Data Processing
+kafka-python>=2.0.2  # Apache Kafka
+pika>=1.3.2  # RabbitMQ
+celery>=5.3.4  # Distributed task queue
+
+# Enhanced Visualization Libraries
+pygal>=3.0.0  # SVG charts
+wordcloud>=1.9.2  # Word clouds
+squarify>=0.4.3  # Treemap visualizations
+
+# Data Export and Reporting
+jinja2>=3.1.2  # Template engine
+markdown>=3.5.1  # Markdown processing
+pdfkit>=1.0.0  # PDF generation alternative
+
+# Environment-specific Dependencies
+# Uncomment based on deployment target:
+
+# For GPU acceleration (CUDA)
+# torch>=2.1.0+cu118
+# faiss-gpu>=1.7.4
+
+# For Apple Silicon (M1/M2)
+# torch>=2.1.0  # MPS backend supported
+
+# Production Deployment
+gunicorn>=21.2.0
+supervisor>=4.2.5
+nginx>=1.24.0  # Note: Install via system package manager
+
+# Container Health Checks
+psutil>=5.9.6
+python-multipart>=0.0.6
+
+# Advanced Logging and Monitoring
+loguru>=0.7.2
+elastic-apm>=6.19.0
+datadog>=0.48.0
+
+# Version and dependency management
+pip-tools>=7.3.0
+pipdeptree>=2.13.0
+
+# Final optimizations
+wheel>=0.42.0
+setuptools>=69.0.0
+cachetools>=5.3.2
